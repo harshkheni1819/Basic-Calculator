@@ -1,0 +1,27 @@
+# Calculator Testing 
+
+1. Basic Operations
+Input: 3 + 5 | Expected: 8 | Result: 8 | Status: Pass
+Input: 10 - 4 | Expected: 6 | Result: 6 | Status: Pass
+Input: 6 * 7 | Expected: 42 | Result: 42 | Status: Pass
+Input: 20 / 4 | Expected: 5 | Result: 5 | Status: Pass
+2. Order of Operations (BODMAS)
+Input: 3 + 5 * 2 | Expected: 13 | Result: 13 | Status: Pass
+Input: (3 + 5) * 2 | Expected: 16 | Result: 16 | Status: Pass
+Input: 6 + 4 / 2 * 3 | Expected: 12 | Result: 12 | Status: Pass
+Input: (6 + 4) / (2 * 1) | Expected: 5 | Result: 5 | Status: Pass
+3. Keyboard Input
+Action: Typing numbers | Input: 1 2 3 | Works Correctly: Yes
+Action: Typing operators | Input: + - * / | Works Correctly: Yes
+Action: Pressing Enter | Input: = | Works Correctly: Yes
+Action: Pressing Backspace | Input: Delete last | Works Correctly: Yes
+Action: Pressing Escape | Input: Clear all | Works Correctly: Yes
+4. Edge Cases
+Input: 5 / 0 | Expected: Error or Infinity | Result: Infinity | Status: Pass
+Input: 5.2.3 | Expected: Prevent or error | Result: Not allowed | Status: Pass
+Input: Press `=` first | Expected: Nothing happens | Result: Handled | Status: Pass
+Input: + 5 * then `=` | Expected: Error or ignore | Result: Handled | Status: Pass
+5. Advanced Features (Optional)
+Feature: Square (x^2) | Example: 5 | Result: 25 | Status: Pass
+Feature: Square root (sqrt) | Example: 9 | Result: 3 | Status: Pass
+Feature: Percentage (%) | Example: 50 | Result: 0.5 | Status: Pass
